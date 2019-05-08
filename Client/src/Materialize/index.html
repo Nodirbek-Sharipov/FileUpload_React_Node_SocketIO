@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Materialize</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style type="text/css">
+		a{ text-decoration: none !important; }
+		a:hover{ color: inherit !important; }
+		nav{ background: #109858; }
+		.card-title{ text-transform: capitalize; }
+		.card-content p span{ padding-left: 30px !important; }
+		.card-content p span i{ position: absolute; margin-left: -30px !important; }
+		.card-content .row{color: #109858;}
+		.card-content .row a{color: #109858; padding-left: 5px; padding-right: 5px; padding-bottom: 2px; border-radius: 2px;}
+		.collection li span{ text-transform: capitalize; }
+		.collection a{text-decoration: none; color: #000;}
+		.uppder_sidenav{height: 200px;background: #109858;width: inherit;}
+		.pagination li.active a{background: #109858;}
+		.pagination li.active a:hover{color: #fff !important;}
+		.pagination li.disabled a:hover{color: #999 !important;}
+		.pagination span{width: 35px;height: 20px;font-weight: bold;color: #999;letter-spacing: 3px;line-height: 10px;}
+		.mainlogo{display: none !important;}
+		body, #navbar_wrap{min-width: 350px;}
+		@media only screen and (min-width: 100px) and (max-width: 992px) {.mainlogo{display: block !important;}}
+		footer div ul{width: 150px;}
+		footer div ul li{list-style: none;text-align: left;display: list-item;margin-top: 5px;margin-bottom: 5px;}
+		footer div ul li a{color: #000;padding: 4px 10px;border-radius: 3px;}
+		footer div ul li a.active{color: #fff !important;background: #109858 !important;}
+		.sbscribe{background: #109858 !important; color: #fff !important;}
+		.sbscribe:hover{background: #109858 !important; color: #fff !important;}
+		.carousel .carousel-item{width: 100%;height: inherit;background-position: center;background-size: cover;background-repeat: no-repeat;}
+		.slideCont div button{margin-top: -65px;padding-top: 3px;padding-bottom: 1px;padding-left: 3px;padding-right: 3px;border: none;background: #fff;color: #109858;border-radius: 5px;cursor: pointer;}
+	</style>
+</head>
+<body>
+
+<div class="navbar-fixed">
+	<nav id="navbar_wrap" class="nav-extended">
+		<div class="nav-wrapper">
+   		      <a href="#" class="brand-logo center waves-effect waves-light mainlogo">Example</a>
+		      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		      <ul id="nav-mobile" class="left hide-on-med-and-down">
+		        <li><a href="#" class="waves-effect waves-light"><i class="material-icons left">home</i>Home</a></li>
+		        <li><a class="dropdown-trigger waves-effect waves-light" href="#" data-target="dropdown1"><i class="material-icons left">category</i>Genres<i class="material-icons right">arrow_drop_down</i></a></li>
+		        <ul id="dropdown1" class="dropdown-content">
+		        	<li><a class="waves-effect waves-light" href="#">One</a></li>
+		        	<li><a class="waves-effect waves-light" href="#">Two</a></li>
+		        	<li class="divider"></li>
+		        	<li><a class="waves-effect waves-light" href="#">Three</a></li>
+		        </ul>
+		        <li><a href="#" class="waves-effect waves-light"><i class="material-icons left">playlist_add_check</i>All games</a></li>
+		        <li><a href="#" class="waves-effect waves-light"><i class="material-icons left">feedback</i>Request a Game</a></li>
+		        <li><a href="#" class="waves-effect waves-light"><i class="material-icons left">info</i>About</a></li>
+		      </ul>
+		      <ul class="right">
+		      	<li id="search_btn" title="Search games"><a class="waves-effect right waves-light"><i class="material-icons">search</i></a></li>
+		      </ul>
+		</div>
+	</nav>
+	
+	<center>
+		<div class="row">
+			<nav id="searchbar_wrap" style="display: none;">
+					<div class="nav-wrapper col l8 m10 s12 push-l2 push-m1" style="background: #fff !important;">
+					   	<form>
+					  		<div class="input-field">
+						  		<input type="search" id="search" placeholder="Search...">
+						  		<label class="label-icon" for="search"><i class="material-icons" style="color: #000 !important;">search</i></label>
+						  		<i class="material-icons" id="close_search" style="color: #000 !important;">close</i>
+						  	</div>	
+					  	</form>
+					</div>
+			</nav>
+		</div>
+	</center>
+</div>
+
+  <ul class="sidenav" id="mobile-demo">
+  	<div class="uppder_sidenav">
+  		
+  	</div>
+    <li><a href="#" class="waves-effect waves-dark"><i class="material-icons left">home</i> Home</a></li>
+    <li><a class="dropdown-trigger waves-effect waves-dark" href="#" data-target="dropdown2"><i class="material-icons left">category</i>Genres<i class="material-icons right tiny">arrow_drop_down</i></a></li>
+    <ul id="dropdown2" class="dropdown-content">
+      	<li><a href="#" class="waves-effect waves-dark">One</a></li>
+       	<li><a href="#" class="waves-effect waves-dark">Two</a></li>
+       	<li><a href="#" class="waves-effect waves-dark">Three</a></li>
+    </ul>
+    <li><a href="#" class="waves-effect waves-dark"><i class="material-icons left">playlist_add_check</i>All games</a></li>
+    <li><a href="#" class="waves-effect waves-dark"><i class="material-icons left">feedback</i>Request a Game</a></li>
+    <li><a href="#" class="waves-effect waves-dark"><i class="material-icons left">info</i>About</a></li>
+  </ul>
+
+  
+
+<!-- <div class="navbar-fixed">
+	<nav class="nav-extended">
+		<div class="nav-content">
+	      <ul class="tabs tabs-transparent">
+	        <li class="tab"><a class="active waves-effect waves-light" href="#test1"><i class="material-icons left" style="margin-top: -2px;">search</i>Search</a></li>
+	        <li class="tab"><a class="waves-effect waves-light" href="#test2">TAB 2</a></li>
+	        <li class="tab"><a class="waves-effect waves-light" href="#test3">TAB 3</a></li>
+	        <li class="tab"><a class="waves-effect waves-light" href="#test4">TAB 4</a></li>
+	      </ul>
+	    </div>
+	</nav>
+</div>
+
+  <div id="test1" style="border:1px solid; text-align: center; min-height: 500px;" class="col s12">PAGE 1</div>
+  <div id="test2" style="border:1px solid; text-align: center; min-height: 500px;" class="col s12">PAGE 2</div>
+  <div id="test3" style="border:1px solid; text-align: center; min-height: 500px;" class="col s12">PAGE 3</div>
+  <div id="test4" style="border:1px solid; text-align: center; min-height: 500px;" class="col s12">PAGE 4</div> -->
+
+
+<br><br>
+
+<!-- SLIDER CAROUSEL -->
+<div class="row">
+	<div class="col l8 push-l2 m10 push-m1 s10 push-s1">
+		<div class="carousel carousel-slider center" style="height: 350px; border-radius: 5px;">
+			<div class="carousel-item" style="background-image: url(images/1.jpg);">
+				
+			</div>
+			<div class="carousel-item" style="background-image: url(images/1.jpg);">
+				
+			</div>
+			<div class="carousel-item" style="background-image: url(images/1.jpg);">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row slideCont">
+	<div class="col l8 push-l2 m10 push-m1 s10 push-s1">
+		<button class="left" style="margin-left: 20px;"><i class="material-icons" onclick="$('.carousel').carousel('prev');">navigate_before</i></button>
+		<button class="right" style="margin-right: 20px;"><i class="material-icons" onclick="$('.carousel').carousel('next');">navigate_next</i></button>
+	</div>
+</div>
+<!-- /SLIDER CAROUSEL -->
+
+
+<div class="container">
+	<div class="row">
+		<!-- LEFT SIDE -->
+		<div class="col l8 s12 m8" style="min-height: 500px;">
+			<!-- ITEM -->
+			<div class="row">
+				<div class="col s12 m12 l10">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/1.jpg">
+							<!-- <a href="#!" class="btn-large btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+						</div>
+						<div class="card-content">
+							<span class="card-title">tom clancy's rainbow six siege</span>
+							<br>
+							<!-- <hr> -->
+							<p class="row">
+								<span class="col s6" title="Date added"><i class="material-icons">today</i> 31-12-2018</span>
+								<span class="col s6" title="Genre"><i class="material-icons">category</i> <a href="#!" class="waves-effect waves-dark">action</a></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /ITEM -->
+			<!-- ITEM -->
+			<div class="row">
+				<div class="col s12 m12 l10">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/1.jpg">
+							<a href="#!" class="btn-large btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title">tom clancy's rainbow six siege</span>
+							<br>
+							<!-- <hr> -->
+							<p class="row">
+								<span class="col s6" title="Date added"><i class="material-icons">today</i> 31-12-2018</span>
+								<span class="col s6" title="Genre"><i class="material-icons">category</i> <a href="#!" class="waves-effect waves-dark">action</a></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /ITEM -->
+			<!-- ITEM -->
+			<div class="row">
+				<div class="col s12 m12 l10">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/1.jpg">
+							<a href="#!" class="btn-large btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title">tom clancy's rainbow six siege</span>
+							<br>
+							<!-- <hr> -->
+							<p class="row">
+								<span class="col s6" title="Date added"><i class="material-icons">today</i> 31-12-2018</span>
+								<span class="col s6" title="Genre"><i class="material-icons">category</i> <a href="#!" class="waves-effect waves-dark">action</a></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /ITEM -->
+
+
+			<!-- PAGINATION LINKS -->
+			<center>
+			<ul class="pagination col s12 m12 l10">
+				<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+				<li class="active waves-effect"><a href="#!">1</a></li>
+				<li class="waves-effect"><a href="#!">2</a></li>
+				<li class="waves-effect"><a href="#!">3</a></li>
+				<li class="waves-effect"><a href="#!">4</a></li>
+				<li class="waves-effect"><a href="#!">5</a></li>
+				<span>...</span>
+				<li class="waves-effect"><a href="#!">21</a></li>
+				<li class="waves-effect"><a href="#!">22</a></li>
+				<li class="waves-effect"><a href="#!">23</a></li>
+				<li class="waves-effect"><a href="#!">24</a></li>
+				<li class="waves-effect"><a href="#!">25</a></li>
+				<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+			</ul>
+		</center>
+			<!-- /PAGINATION LINKS -->
+
+
+		</div>
+		<!-- /LEFT SIDE -->
+
+
+		<!-- RIGHT SIDE -->
+		<div class="col l4 s12 m4" style="min-height: 400px;">
+			<div class="ads">
+				
+			</div>
+
+			<ul class="collection">
+				<li class="collection-item avatar waves-effect waves-dark">
+					<a href="#!"><img src="images/1.jpg" class="circle">
+					<span class="title">tom clancy's rainbow six siege</span></a>
+				</li>
+				<li class="collection-item avatar waves-effect waves-dark">
+					<a href="#!"><img src="images/1.jpg" class="circle">
+					<span class="title">tom clancy's rainbow six siege</span></a>
+				</li>
+				<li class="collection-item avatar waves-effect waves-dark">
+					<a href="#!"><img src="images/1.jpg" class="circle">
+					<span class="title">tom clancy's rainbow six siege</span></a>
+				</li>
+				<li class="collection-item avatar waves-effect waves-dark">
+					<a href="#!"><img src="images/1.jpg" class="circle">
+					<span class="title">tom clancy's rainbow six siege</span></a>
+				</li>
+				<li class="collection-item avatar waves-effect waves-dark">
+					<a href="#!"><img src="images/1.jpg" class="circle">
+					<span class="title">tom clancy's rainbow six siege</span></a>
+				</li>
+				<li class="collection-item avatar waves-effect waves-dark">
+					<a href="#!"><img src="images/1.jpg" class="circle">
+					<span class="title">tom clancy's rainbow six siege</span></a>
+				</li>
+			</ul>
+
+		</div>
+		<!-- /RIGHT SIDE -->
+	</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer class="row" style="border-top: 1px solid silver;">
+
+<style>
+	.const{color: darkblue}
+	.prebg{color: rgb(30,30,30); background: #fff; text-align: left; font-family: monospace, monospace; font-size: 12px; padding-left: 10px; overflow-y: auto;}
+	.varr{color: rgb(50,150,156);}
+	.param{color: rgb(50,150,156);}
+	.val{color: rgb(206,130,72);}
+	.lstnum{color: rgb(120,120,120);}
+</style>
+
+<center>
+	<div class="col l4 m4 s12">
+		<h5>Author</h5>
+<pre class="prebg">
+<code class="lstnum">1 |</code></code> <code class="const">const</code> <code class="varr">creator</code> = {
+<code class="lstnum">2 |</code> 	<code class="param">name</code>		: '<code class="val">Nodirbek</code>',
+<code class="lstnum">3 |</code> 	<code class="param">surname</code>		: '<code class="val">Sharipov</code>',
+<code class="lstnum">4 |</code> 	<code class="param">PartTimeJob</code>	: '<code class="val">Fullstack developer</code>',
+<code class="lstnum">5 |</code> 	<code class="param">FullTimeJob</code>	: '<code class="val">Student at WIUT, lvl5 BIS</code>',
+<code class="lstnum">6 |</code>     <code class="param">email</code>		: '<code class="val">sharipovn4@gmail.com</code>',
+<code class="lstnum">7 |</code> 	<code class="param">GitHub</code>		: '<code class="val">github.com/Nodirbek-Sharipov</code>',
+<code class="lstnum">8 |</code> 	<code class="param">Instagram</code>	: '<code class="val">@sharipov_nodirbek</code>',
+<code class="lstnum">9 |</code>  	<code class="param">Telegram</code>	: '<code class="val">@WIUTERIAN_N</code>'
+<code class="lstnum">10|</code> }
+</pre>	
+	</div>
+
+	<div class="col l4 m4 s12">
+		<h5>Quick links</h5>
+		<ul>
+			<li><a href="#!" class="waves-effect waves-dark active">Home</a></li>
+			<li><a href="#!" class="waves-effect waves-dark">All games</a></li>
+			<li><a href="#!" class="waves-effect waves-dark">Request a Game</a></li>
+			<li><a href="#!" class="waves-effect waves-dark">About</a></li>
+			<!-- <li><a href="#!" class="waves-effect waves-dark">Genres</a></li> -->
+		</ul>
+	</div>
+
+	<div class="col l4 m4 s12">
+		<h5>Newsletter</h5>
+		<br>
+		<div class="row">
+			<div class="input-field col s8 push-s2 m10 push-m1 l8 push-l2">
+				<input type="email" id="email" class="validate">
+				<label for="email"  style="width: 100px">Email</label>
+				<span class="text-helper">Get the latest game releases</span>
+				<br><br>
+				<a class="btn waves-effect waves-light sbscribe">Subscribe</a>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m12 l12">Copyright &copy; 2018 Example </div>
+</center>
+</footer>
+
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/init.js"></script>
+
+</body>
+</html>
