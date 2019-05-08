@@ -3,14 +3,14 @@ An implementation of websockets using socket.io and File api to make a resumable
 
 Once downloaded the files from the repo, install the dependencies and run the app
 
-Run the node app
-`cd Server`
-`npm i`
-`node index.js`
+Run the node app \n
+`cd Server` \n
+`npm i` \n
+`node index.js` \n
 
-Run the react app
-`cd ../Client`
-`npm i`
-`npm start`
+Run the react app \n
+`cd ../Client` \n
+`npm i` \n
+`npm start` \n
 
 go to `localhost:3000` to test the app 
