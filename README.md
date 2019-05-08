@@ -4,13 +4,15 @@ An implementation of websockets using socket.io and File api to make a resumable
 Once downloaded the files from the repo, install the dependencies and run the app
 
 Run the node app
-```cd Server
+```
+cd Server
 npm i
 node index.js
 ```
 
 Run the react app
-```cd ../Client
+```
+cd ../Client
 npm i
 npm start
 ```
