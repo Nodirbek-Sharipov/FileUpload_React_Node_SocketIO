@@ -6,11 +6,13 @@ Once downloaded the files from the repo, install the dependencies and run the ap
 Run the node app
 ```cd Server
 npm i
-node index.js```
+node index.js
+```
 
 Run the react app
 ```cd ../Client
 npm i
-npm start```
+npm start
+```
 
 go to `localhost:3000` to test the app 
