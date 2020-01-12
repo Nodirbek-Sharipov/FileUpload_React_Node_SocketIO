@@ -127,7 +127,7 @@ export const AudienceStats = ({style, menuItems}) =>{
 			<div style={{color: '#fff', fontWeight: '500', fontSize: '14px', padding: '15px 5px 5px 5px'}}>Audience registration</div>
 			<div style={{color: 'rgb(255,255,255,0.4)', fontWeight: '600', fontSize: '10px'}}>234 ENTRIES</div>
 			<div style={{margin: '15px 0 10px 0', textAlign: "center"}}>
-				<div className='myChart' style={{transform: 'rotate(180deg)', height: '110px'}}>
+				<div className='myChart' style={{transform: 'rotate(180deg)', height: '110px', display: 'none'}}>
 
 					<div style={{
 						marginBottom: '-110px',
