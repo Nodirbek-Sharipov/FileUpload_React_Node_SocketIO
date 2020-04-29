@@ -4,8 +4,8 @@
 
 An implementation of WebSockets using socket.io and File API to make a resumable file upload system
 
-![alt text](https://github.com/Nodirbek-Sharipov/FileUpload_React_Node_SocketIO/blob/master/fu2.jpg "Screenshot 1")
-![alt text](https://github.com/Nodirbek-Sharipov/FileUpload_React_Node_SocketIO/blob/master/fu3.jpg "Screenshot 2")
+![alt text](https://github.com/Nodirbek-Sharipov/FileUpload_React_Node_SocketIO/blob/master/ui1.png "Screenshot 1")
+![alt text](https://github.com/Nodirbek-Sharipov/FileUpload_React_Node_SocketIO/blob/master/ui2.png "Screenshot 2")
 
 Once downloaded the files from the repo, install the dependencies and run the app
 
