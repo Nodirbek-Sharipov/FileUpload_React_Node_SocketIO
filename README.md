@@ -1,8 +1,11 @@
 # React NodeJS SocketIO live resumable file upload system
 
-![Output sample](https://github.com/ajasmin/camstudio-mousedown-highlight/raw/master/android_vid_test.gif)
+![Output sample](https://github.com/Nodirbek-Sharipov/FileUpload_React_Node_SocketIO/blob/master/fu.gif)
 
 An implementation of WebSockets using socket.io and File API to make a resumable file upload system
+
+![alt text](https://github.com/Nodirbek-Sharipov/FileUpload_React_Node_SocketIO/blob/master/fu2.png "Screenshot 1")
+![alt text](https://github.com/Nodirbek-Sharipov/FileUpload_React_Node_SocketIO/blob/master/fu3.png "Screenshot 2")
 
 Once downloaded the files from the repo, install the dependencies and run the app
 
